@@ -13,6 +13,9 @@ jobs:
   - checkout: self
 
   - task: Node@16
+- task: CmdLine@2
+  inputs:
+    script: 'npm install --global'
     inputs:
       versionSpec: "16.x"
     displayName: "Install Node.js"
